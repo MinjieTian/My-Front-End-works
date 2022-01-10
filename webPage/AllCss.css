@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header, footer, page{
+    min-width: 500px;
+}
+html,body{
+    height: 100%;
+}
+/*   header */
+.clearfix:after,.clearfix:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+header ul{
+    width: 44%;
+    margin-top: 80px;
+}
+li{
+    padding: 0 10px;
+    border-left: 1px dotted #b7b7b7;
+    float: left;
+    padding-bottom: 9px;
+    margin-right: 5%;
+    list-style: none;
+
+}
+a{
+    text-decoration: none;
+}
+
+header a:link{
+    color:black
+}
+
+header a:visited{
+    color:black
+}
+
+header li:hover{
+    background-color: darkgray;
+}
+
+#username{
+    /*margin-left: 10px;*/
+
+    font: 10px/1.5em sans-serif;
+}
+/*   header end */
+
+/*  Insititue  */
+input{
+    width: 100%;
+
+    margin-bottom: 10px;
+}
+/*    Ins end*/
+
+/*    User*/
+
+.register input{
+    max-width: 200px;
+    display: block;
+    margin:auto;
+    margin-bottom: 10px;
+}
+
+
+footer{
+    height: 10%;
+    width: 100%;
+    background-color: darkgray;
+}
+.page{
+    min-height: 70%;
+}

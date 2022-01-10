@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Southern Hemisphere Institute of Technology</title>
+    <link rel="stylesheet" href="AllCss.css">
+    <link rel="icon" href="http://localhost:5000/logo-192x192.png" alt="Logo">
+    <script src="allJS.js"></script>
+</head>
+<body>
+    <div id = 'username' style="display: inline-block; float: right">
+        <span>User:&nbsp</span>
+        <span id="user"> Not Login</span>
+        <button id="logout" style="height: 15px; font-size: 10px ">Logout</button>
+
+    </div>
+    <header class="clearfix" style="">
+        <div style="display: inline-block; float: left">
+            <a href="#">
+                <img style="height: 192px;width: 192px;" src="http://localhost:5000/api/GetLogo" alt="Logo">
+            </a>
+        </div>
+
+        <ul style="display: inline-block; float: left">
+            <li>
+                <a href="javascript:;" class="Home_a">
+                    &#127968;Home
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="Staff_a">
+                    &#128240;Staff
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="Insititue_a">
+                    &#128722;Institue Shop
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="Reg_a">
+                    &#128105;User Registration
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="Book_a">
+                    &#128214;Guest Book
+                </a>
+
+            </li>
+        </ul>
+
+
+    </header>
+<!--    <button id="btn">btn</button>-->
+
+
+<!--Home-->
+    <div class="home page" style="text-align: center">
+        <div style="background-color:grey;height: 50px; box-sizing: border-box"><h1>Home</h1></div>
+        <img style="width: 70%;"src="https://localhost:5001/api/Getlogo" alt="logo">
+        <p>This is the logo</p>
+    </div>
+<!--Home end-->
+
+<!--staff-->
+    <div class="staff page" style="display: none;text-align: center">
+        <div style="background-color:grey;height: 50px; box-sizing: border-box"><h1>Staff</h1></div>
+    </div>
+<!--staff end-->
+
+<!--    ins-->
+    <div class="insititue page" style="display: none;text-align: center">
+        <input type="text" placeholder="&#128269" id = 'search-bar' autocomplete="off">
+        <div  class="insDiv">
+            <div style="background-color:grey;height: 50px; box-sizing: border-box"><h1>Shop</h1></div>
+
+        </div>
+    </div>
+
+<!--ins end-->
+
+<!--  register  -->
+    <div class="register page" style="display: none;text-align: center">
+        <div style="background-color:grey;height: 50px; box-sizing: border-box"><h1>Registration or Login</h1></div>
+        <div class="custompage">
+            <div>
+                <p>Register Here</p>
+                <input type="text" placeholder="username" id="rn" autocomplete="off">
+                <input type="password" placeholder="your password" id="rp">
+                <input type="text" placeholder="your address" id="ra" autocomplete="off">
+                <button id="registerBtn">Register</button>
+                <br>
+                <br>
+                <br>
+                <p>Login Here</p>
+                <input type="text" placeholder="username" id="rn1" autocomplete="off">
+                <input type="password" placeholder="your password" id="rp1">
+                <button id="loginbutton" >Login </button>
+            </div>
+
+        </div>
+    </div>
+<!--    reg end -->
+
+<!--    guest book-->
+    <div class="book page" style="display: none;">
+        <div style="background-color:grey;height: 50px; box-sizing: border-box"><h1>Guest Book</h1></div>
+        <h2>Please sign our guest book</h2>
+        <p>Please respect other when posting comments.</p>
+        <div class='clearfix' style="background-color: darkgrey; width: 700px;height: 250px; border-radius: 5px; margin :auto">
+            <textarea  id='textarea' placeholder="Your comments here" style="width: 500px; display: block; border-radius: 5px;height: 150px;margin-top: 20px;margin-right: auto; margin-left: auto" autocomplete="off"></textarea>
+
+            <div style="margin-top: 10px">
+                <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your name &nbsp;&nbsp;&nbsp;:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                <input id='name' type="text" placeholder="Enter your name here" style="width: 400px;" autocomplete="off">
+                <button id="commentBtn">&#10132;</button>
+            </div>
+        </div>
+        <div>
+            <h3>Recent Entries</h3>
+            <iframe id="some_frame_id" src="https://localhost:5001/api/GetComments"  style="width: 100%; height: 500px" frameborder="0"></iframe>
+<!--            <iframe id="some_frame_id" src="https://localhost:5001/api/GetComments"  style="width: 100%; height: 500px" ></iframe>-->
+        </div>
+
+    </div>
+<!--    book end-->
+
+<footer>
+
+</footer>
+</body>
+</html>
